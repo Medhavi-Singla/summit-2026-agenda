@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Agenda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      color: black;
+      background-color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    .subline {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .day-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .day-btn {
+      padding: 8px 18px;
+      border: 1px solid #007BFF;
+      background: white;
+      color: #007BFF;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+    .day-btn.active {
+      background: #007BFF;
+      color: white;
+    }
+    .agenda {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      align-items: start;
+    }
+    .header {
+      font-weight: bold;
+      background-color: #f0f0f0;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+    .session {
+      font-weight: bold;
+    }
+    .overview {
+      font-weight: normal;
+    }
+    .speakers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .speaker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .speaker img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="subline">Date and time is shown in (UTC -04:00) America/New_York.</div>
+  <h2>Event Agenda</h2>
+
+  <div class="day-tabs">
+    <button class="day-btn active" onclick="showDay('day1', this)">March 17</button>
+    <button class="day-btn" onclick="showDay('day2', this)">March 18</button>
+  </div>
+
+  <!-- DAY 1 -->
+  <div id="day1" class="day-content">
+    <div class="agenda header">
+      <div>Time</div>
+      <div>Session</div>
+      <div>Speaker Name</div>
+    </div>
+
+    <div class="agenda">
+      <div class="session">8:00 AM - 8:15 AM</div>
+      <div class="overview"><b>Welcome Note</b><br>Brief welcome, overview of the day, introduction to the themes and guiding principles.</div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31063246096?profile=RESIZE_400x">
+          <span><b>Joe Mirachi</b><br>CEO<br>Launch Credit Union</span>
+        </div>
+      </div>
+    </div>
+          
+ <div class="agenda">
+    <div class="session">8:15 AM – 9:15 AM</div>
+    <div class="overview">
+     <b> Operationalize AI: Why Now Is the Moment for Credit Unions to Act</b><br>
+      Artificial intelligence is no longer a future promise for financial services. Across banking and fintech, AI is already moving beyond personal productivity advantages to reshape operating models, consumer experience, marketing, risk management, and growth strategies. Many have associated its transformative change with that of the Industrial Revolution. The question for credit unions is no longer if AI will matter, but how quickly and effectively it will be operationalized.<br><br>
+
+
+
+This opening keynote sets the stage for CULytics Summit 2026, offering a clear-eyed view of where AI stands today across financial services, what has changed in the last 12–18 months, and why this moment demands action. The keynote will explore how AI is moving out of experimentation and into the core of day-to-day operations, with implications for efficiency, member engagement, lending, fraud, and competitive positioning.
+<br><br>
+
+
+The keynote issues a call to action for credit unions: now is the time to plan, prepare, and execute. Credit unions that wait may find themselves reacting to change instead of shaping it. (seems a negative or threatening . . . can we not say same thing but being positive by saying the opposite like “Credit unions that act now have a competitive advantage, lower operational costs, more efficient, driving growth and improving service sooner”)
+<br><br>
+
+
+The session also introduces the four pillars of the CULytics Summit, guiding the conference’s peer-led discussions:<ul>
+
+  <li>From Insight to Impact: Production & Measurement</li>
+  <li>Collective Intelligence: Peer Patterns That Scale</li>
+  <li>Trustworthy Analytics: Governance, Explainability & Privacy</li>
+  <li>Decision & Action. How credit unions turn what they’ve learned into concrete next steps.</li></ul>
+  Together, these pillars frame a practical path forward, grounded in real-world implementations, measurable outcomes, and shared learning. The keynote sets expectations for a Summit focused not on theory or hype, but on what’s working now, what’s coming next, and how credit unions can confidently push off from the starting blocks.
+    </div> 
+  <div class="speakers">
+    <!-- Add images if available -->
+   </div>   
+  </div>
+<div class="agenda">
+    <div class="session">9:15 AM – 10:00 AM</div>
+    <div class="overview">
+     <b> From Strategy to Improved ROA: Prioritizing Enterprise Investments for Measurable Business Impact</b><br>
+    Many credit unions have no shortage of strategic initiatives competing for attention and investment, ranging from core modernization and digital experience to AI and analytics, yet struggle to translate that ambition into measurable improvements in ROA, efficiency, or member outcomes.<br><br>
+In this session, Shira Spector shares how Valley Strong Credit Union approaches enterprise investment decisions through a disciplined framework designed to prioritize initiatives that drive measurable business impact. Framed at the executive level, the discussion explores how leadership defines objectives, evaluates competing proposals, and builds a cohesive roadmap that aligns people, process, data, and technology around outcomes that matter.
+<br><br>
+Shira will outline the decision framework her teams use to assess each initiative and shape the enterprise roadmap, including:<ul>
+
+<li>What problem are we solving and why does it matter now</li>
+  <li>What results are intended and how they will be measured</li>
+<li>What headwinds and tailwinds affect success</li>
+  <li>What investments are required across people, process, and technology</li></ul>
+To ground the framework, she will reference examples of how these questions have been applied in practice, helping practitioners understand how strategic intent translates into execution, prioritization, ownership, and adoption.
+<br><br>
+
+
+Attendees will leave with a repeatable approach for moving strategic initiatives from ideas and pilots into production-ready programs with clear ownership, metrics, and business impact.
+    </div>
+    <div class="speakers">
+      <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/13528139867?profile=RESIZE_400x" alt="Jennifer Flexer">
+        <span><b>Shira Spector</b><br>VP of Business Strategy & Insights<br>
+Valley Strong Credit Union</span>
+      </div>
+    </div>
+</div>
+        <div class="agenda">
+    <div class="session">10:00 AM – 10:30 AM</div>
+    <div class="overview"><b>Networking Break and Expo Hall</b><br>Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"></div>
+  </div>
+                      <div class="agenda">
+    <div class="session">10:30 AM – 10:45 AM</div>
+    <div class="overview"><b>Innovation Showcase</b>.</div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div>
+<div class="agenda">
+    <div class="session">10:45 AM – 11:45 AM</div>
+    <div class="overview">
+     <b> Executive Playbook: Turning AI into ROI.</b><br>
+    AI is no longer a “data team project”. It’s a CEO agenda item tied to growth, efficiency, and trust. In this C-suite panel, credit union CEOs and CSOs share how they are moving from promising pilots to production programs: the operating model, governance, and measurement discipline that turns AI into business outcomes. You’ll hear the real decisions behind scaling AI, where they are investing first, what they are stopping doing, how they are aligning the executive team on a smaller set of KPIs, and how they are building feedback loops to monitor both AI performance and business impact. Walk away with a practical blueprint for prioritization, resourcing, and proving ROI that credit unions can apply immediately.
+    </div>
+    <div class="speakers"> 
+ <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31063246096?profile=RESIZE_400x">
+          <span><b>Joe Mirachi</b><br>CEO
+<br>Launch Credit Union</span>
+        </div>
+      <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/10232720488?profile=RESIZE_400x" alt="Jennifer Flexer">
+        <span><b>George Rudolph</b><br>President and CEO<br>
+PSECU</span>
+      </div>
+        <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/12423513900?profile=RESIZE_1200x" alt="Jennifer Flexer">
+        <span><b>Chrissy Siders</b><br>President/CEO<br>
+TRUE Community Credit Union</span>
+      </div>   
+            <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/31064207055?profile=RESIZE_400x" alt="Jennifer Flexer">
+        <span><b>Jim Adamczyk</b><br>Senior Executive Vice President / Chief Strategy Officer<br>
+FAIRWINDS Credit Union</span>
+      </div>   
+    </div>
+  </div>
+        <div class="agenda">
+    <div class="session">11:45 AM – 12:30 PM</div>
+    <div class="overview"><b>Mentor Led Roundtable</b><br>Mentor Roundtables are the bridge between what you learned at the Summit and what you can actually execute back at your credit union. In a small, mentor-led discussion, you’ll bring your real-world objectives, opportunities, and constraints—budget, staffing, data readiness, governance requirements, stakeholder alignment, timelines—and work with peers to pressure-test which ideas apply (and which don’t). Together, you’ll translate key takeaways into prioritized next steps, define what to do in the next 30–60 days, and leave with a practical action plan plus reusable frameworks and templates you can take back to your organization.</div>
+    <div class="speakers"></div>
+  </div>
+                <div class="agenda">
+    <div class="session">12:30 PM – 1:30 PM</div>
+    <div class="overview"><b>Lunch - Networking Break and Expo Hall</b><br>Grab your Lunch. Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"><!-- Add images if available -->
+  </div>
+</div>
+    <div class="agenda">
+    <div class="session">1:30 PM – 2:15 PM</div>
+    <div class="overview">
+     <b> From Roadmaps to Reality: Preparing for an AI-Driven Operating Model</b><br>AI is rapidly moving from an experimental capability to the core of how financial institutions will operate. While most credit unions now have an AI roadmap, few have clarity on what an AI-powered operating model may look like: including concrete use cases and patterns where AI guides service interactions, supports lending decisions, anticipates member needs, and streamlines internal workflows.
+<br><br>
+
+
+In this vision-setting session, you’ll hear how BCU [and peers? – tbd] are defining their next 3-5 year AI vision, and what specific steps they’re taking today to prepare, sequence investments, and reduce risk. Core enablers include scalable CRM platforms, strong data governance, API-based architectures, and the operating discipline required to integrate these into daily workflows.
+<br><br>
+
+
+Framed for both executives and senior practitioners, the discussion explores how credit unions can think big about AI’s role in the organization while making disciplined moves today.
+    </div>
+    <div class="speakers">
+      <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/8755826684?profile=RESIZE_400x" alt="Jennifer Flexer">
+        <span><b>John Sahagian</b><br>VP & Chief Data Officer<br>
+BCU</span>
+      </div>
+    </div>
+</div>
+        <div class="agenda">
+    <div class="session">2:15 PM – 3:00 PM</div>
+    <div class="overview"><b>Innovation Showcase</b></div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div>     
+        <div class="agenda">
+    <div class="session">3:00 PM – 3:15 PM</div>
+    <div class="overview"><b>Networking Break and Expo Hall</b><br>Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"></div>
+  </div>
+      <div class="agenda">
+    <div class="session">3:15 PM – 4:30 PM</div>
+    <div class="overview">
+     <b> CULytics Transformation Challenge: Peer Patterns from AI in Production</b><br>The CULytics Transformation Challenge is the Summit’s most fast-paced, peer-driven session, designed to surface transferable patterns from real AI and analytics initiatives already in production across credit unions.<br><br>
+
+
+
+In this session, finalist credit unions present concise, outcomes-focused case spotlights highlighting what they built, why they prioritized the use case, how they navigated governance and risk, and what it took to drive adoption across the organization. Rather than deep technical walkthroughs, the focus is on how decisions were made, how efforts were sequenced, and what lessons emerged that other credit unions can adapt locally.
+<br><br>
+
+
+Across multiple case examples, attendees will see:<ul>
+
+  <li>How peers identified and prioritized high-impact use cases</li>
+  <li>How buy-in was secured across leadership, business, and technology teams</li>
+  <li>How governance and guardrails enabled progress rather than slowed it</li>
+<li>What changed once solutions moved into production, including KPIs tied to growth, efficiency, member experience, fraud reduction, and cost-to-serve</li>
+  </ul>
+
+As patterns emerge across finalists, facilitators will synthesize key takeaways and reusable artifacts, helping the audience connect individual success stories into shared learning.
+<br><br>
+
+
+The session concludes with Transformation Challenge recognition and a summary of the peer patterns and practical insights attendees can apply immediately within their own credit unions.
+    </div>
+    <div class="speakers">
+      <div class="speaker">
+        <img src="https://storage.ning.com/topology/rest/1.0/file/get/31064275700?profile=RESIZE_400x" alt="Jennifer Flexer">
+        <span><b>Blake Woods</b><br>SVP, Strategic Transformation<br>
+Community Financial Credit Union</span>
+      </div>
+    </div>
+</div>                  
+<div class="agenda">
+    <div class="session">4:30 PM – 5:15 PM</div>
+    <div class="overview"><b>Mentor Led Roundtable</b><br>Mentor Roundtables are the bridge between what you learned at the Summit and what you can actually execute back at your credit union. In a small, mentor-led discussion, you’ll bring your real-world objectives, opportunities, and constraints—budget, staffing, data readiness, governance requirements, stakeholder alignment, timelines—and work with peers to pressure-test which ideas apply (and which don’t). Together, you’ll translate key takeaways into prioritized next steps, define what to do in the next 30–60 days, and leave with a practical action plan plus reusable frameworks and templates you can take back to your organization.</div>
+    <div class="speakers"></div>
+  </div> 
+  <div class="agenda">
+      <div class="session">5:15 PM - 5:30 PM</div>
+      <div class="overview"><b>Wrap Up for Day 1</b></div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31063246096?profile=RESIZE_400x">
+          <span><b>Joe Mirachi</b><br>CEO<br>Launch Credit Union</span>
+        </div>
+      </div>
+    </div>
+ <div class="agenda">
+    <div class="session">5:30 PM – 7:00 PM</div>
+   <div class="overview"><b>Networking and Cocktail Reception.</b></div>
+    <div class="speakers"></div>
+          </div>
+        </div>
+        
+  <!-- DAY 2 -->
+  <div id="day2" class="day-content" style="display:none;">
+    <div class="agenda header">
+      <div>Time</div>
+      <div>Session</div>
+      <div>Speaker Name</div>
+    </div>
+
+    <div class="agenda">
+      <div class="session">8:00 AM - 8:05 AM</div>
+      <div class="overview"><b>Welcome to Day 2</b><br>Brief welcome, overview of the day, introduction to the themes and guiding principles.</div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31063246096?profile=RESIZE_400x">
+          <span><b>Joe Mirachi</b><br>CEO<br>Launch Credit Union</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="agenda">
+      <div class="session">8:05 AM – 9:00 AM</div>
+ <div class="overview"><b>Innovation Showcase</b></div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div> 
+          <div class="agenda">
+      <div class="session">9:00 AM – 10:00 AM</div>
+ <div class="overview"><b>Pillar 3 - Trustworthy Analytics Presentations and Case Studies</b></div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div> 
+        <div class="agenda">
+    <div class="session">10:00 AM – 10:15 AM</div>
+    <div class="overview"><b>Networking Break and Expo Hall</b><br>Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"></div>
+  </div>  
+       <div class="agenda">
+      <div class="session">10:15 AM - 11:15 AM</div>
+      <div class="overview"><b>Pillar 3 - Trustworthy Analytics Panel Discussion</b></div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31065026897?profile=RESIZE_400x">
+          <span><b>Jenifer Sierra</b><br>Vice President of Enterprise Risk Management<br>
+Keesler Federal Credit Union</span>
+        </div>
+      <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31065028456?profile=RESIZE_400x">
+          <span><b>Arpan Patel</b><br>Vice President of Risk Management<br>
+Delta Community Credit Union</span>
+        </div>       
+      </div>
+    </div>   
+<div class="agenda">
+    <div class="session">11:15 AM – 12:00 PM</div>
+    <div class="overview"><b>Mentor Led Roundtable</b><br>Mentor Roundtables are the bridge between what you learned at the Summit and what you can actually execute back at your credit union. In a small, mentor-led discussion, you’ll bring your real-world objectives, opportunities, and constraints—budget, staffing, data readiness, governance requirements, stakeholder alignment, timelines—and work with peers to pressure-test which ideas apply (and which don’t). Together, you’ll translate key takeaways into prioritized next steps, define what to do in the next 30–60 days, and leave with a practical action plan plus reusable frameworks and templates you can take back to your organization.</div>
+    <div class="speakers"></div>
+  </div> 
+  <div class="agenda">
+    <div class="session">12:00 PM – 1:00 PM</div>
+    <div class="overview"><b>Lunch - Networking Break and Expo Hall</b><br>Grab your Lunch. Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"></div>
+  </div> 
+    <div class="agenda">
+      <div class="session">1:00 PM – 2:00 PM</div>
+ <div class="overview"><b>Innovation Showcase</b></div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div> 
+   <div class="agenda">
+      <div class="session">2:00 PM – 2:15 PM</div>
+ <div class="overview"><b>Awards and Recognition</b></div>
+    <div class="speakers">
+<!-- Add images if available -->
+  </div></div> 
+   <div class="agenda">
+    <div class="session">2:15 PM – 2:45 PM</div>
+    <div class="overview"><b>Networking Break and Expo Hall</b><br>Network with attendees and checkout the exhibit booths.</div>
+    <div class="speakers"></div>
+  </div>    
+     <div class="agenda">
+      <div class="session">2:45 PM - 3:30 PM</div>
+      <div class="overview"><b>AI is a Game-Changer - How, and where, to apply</b><</div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/13527888261?profile=RESIZE_400x">
+          <span><b>Steven Simpson</b><br>
+Advisor<br>
+CULytics</span>
+        </div>
+      </div>
+    </div>
+   <div class="agenda">
+      <div class="session">3:30 PM - 4:00 PM</div>
+      <div class="overview"><b>KSU Innovation Showcase</b></div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/13528074860?profile=RESIZE_930x">
+          <span><b>Humayun Zafar</b><br>
+Interim Department Chair Information Systems & Security<br>
+Kennesaw State University</span>
+        </div>
+      </div>
+    </div>   
+     <div class="agenda">
+      <div class="session">4:00 PM - 5:00 PM</div>
+      <div class="overview"><b>Competitive Acceleration - Case Studies</b></div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31065083683?profile=RESIZE_400x">
+          <span><b>Richard Hayden</b><br>
+Data Science Director<br>
+Virginia Credit Union</span>
+        </div>
+            <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31065083697?profile=RESIZE_400x">
+          <span><b>William Langford</b><br>
+Director of Data Analytics<br>
+Suncoast Credit Union</span>
+        </div>
+      </div>
+    </div>  
+   <div class="agenda">
+      <div class="session">5:00 PM - 5:15 PM</div>
+      <div class="overview"><b>Wrap Up</b></div>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="https://storage.ning.com/topology/rest/1.0/file/get/31063246096?profile=RESIZE_400x">
+          <span><b>Joe Mirachi</b><br>CEO<br>Launch Credit Union</span>
+        </div>
+      </div>
+    </div>           
+    <div class="agenda">
+    <div class="session">5:15 PM – 6:00 PM</div>
+    <div class="overview"><b>Mentor Led Roundtable</b><br>Mentor Roundtables are the bridge between what you learned at the Summit and what you can actually execute back at your credit union. In a small, mentor-led discussion, you’ll bring your real-world objectives, opportunities, and constraints—budget, staffing, data readiness, governance requirements, stakeholder alignment, timelines—and work with peers to pressure-test which ideas apply (and which don’t). Together, you’ll translate key takeaways into prioritized next steps, define what to do in the next 30–60 days, and leave with a practical action plan plus reusable frameworks and templates you can take back to your organization.</div>
+    <div class="speakers"></div>
+      </div>     </div>  
+  <script>
+    function showDay(dayId, button) {
+      document.querySelectorAll('.day-content').forEach(day => {
+        day.style.display = 'none';
+      });
+      document.getElementById(dayId).style.display = 'block';
+
+      document.querySelectorAll('.day-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
